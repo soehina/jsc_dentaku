@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="test.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div id="container">
+        <table class="table">
+            <tr>
+                <td id="inputLabel">0</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="button" value="ASC" onclick="calkBtn(this)">
+                    <input type="button" value="÷" onclick="calkBtn(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="numBtn(this)">
+                    <input type="button" value="8" onclick="numBtn(this)">
+                    <input type="button" value="9" onclick="numBtn(this)">
+                    <input type="button" value="×" onclick="calkBtn(this);">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="numBtn(this)">
+                    <input type="button" value="5" onclick="numBtn(this)">
+                    <input type="button" value="6" onclick="numBtn(this)">
+                    <input type="button" value="-" onclick="calkBtn(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="numBtn(this)">
+                    <input type="button" value="2" onclick="numBtn(this)">
+                    <input type="button" value="3" onclick="numBtn(this)">
+                    <input type="button" value="+" onclick="calkBtn(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" onclick="numBtn(this)">
+                    <input type="button" value="." onclick="calkBtn(this);">
+                    <input type="button" value="=" onclick="calkBtn(this)">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
