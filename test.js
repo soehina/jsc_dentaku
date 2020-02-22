@@ -30,13 +30,20 @@ var numBtn = function(numberBtn){
             numFnc(num);
         };
     }else{
+        // numListに小数点が存在する場合
         if(numList.indexOf('.') >= 0){
+            // numが小数点でなかったらnumFncを実行
             if(num != '.'){
                 numFnc(num);
+            }// numList[0]が0の場合
+        }else if(numList[0] == '0'){
+            // numが０でないならnumFncを実行
+            if(num != 0){
+                numFnc(num);
             }
-        }else if(numList.indexOf('.') == -1){
+        }else{
             numFnc(num);
-        }
+        };
     };
 };
 
