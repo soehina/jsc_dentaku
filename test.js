@@ -1,5 +1,6 @@
 // 空配列を用意
 var numList = [];
+var ac = 0;
 var result = 0;
 
 //値を格納して表示する関数
@@ -9,7 +10,7 @@ function numFnc(num){
     // 変数resultにnumListの中身を結合したものを格納
     result = numList.join('');
     // inputLabelに取得した値を表示
-    document.getElementById("inputLabel").innerText = result;
+    document.getElementById('inputLabel').innerText = result;
 };
 
 // 数字ボタンまたは小数点ボタンが押下されたときの処理
@@ -48,9 +49,13 @@ var numBtn = function(numberBtn){
 };
 
 var calkBtn = function(calBtn){
-    result = Number(numBtn());
     var calk = calBtn.value;
-    if(calk = '='){
-
-    }
+    // ACを押下で0を表示する
+    if(calk == 'AC'){
+       numList.length = 0;
+       document.getElementById('inputLabel').innerText = '0';
+    }else if(calk == '+'){
+        numList.push(calk);
+        console.log(numList);
+	}
 }
